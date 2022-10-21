@@ -76,7 +76,7 @@ public class Piece {
         else return 0;
 }
 
-    public String getPiece(){
+    public String getLetter(){
 
         return piece;
     }

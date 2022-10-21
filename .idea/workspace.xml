@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db5f25b8-a7d2-4347-88ef-82b069d47ffc" name="Changes" comment="Jalal added Hand.java and Piece.java">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Hand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hand.java" afterDir="false" />
-    </list>
+    <list default="true" id="db5f25b8-a7d2-4347-88ef-82b069d47ffc" name="Changes" comment="changed addpiece to addletter" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,7 +41,7 @@
     "last_opened_file_path": "C:/Users/Jalal/OneDrive/Desktop/SYSC3110 TEAM/SYSC3110_Project"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Piece">
     <configuration name="Hand" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Hand" />
       <module name="SYSC3110-GroupProject" />
@@ -55,8 +49,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Piece" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Piece" />
+      <module name="SYSC3110-GroupProject" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Piece" />
         <item itemvalue="Application.Hand" />
       </list>
     </recent_temporary>
@@ -101,6 +103,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Board class + constructor + getPiece(...) + placePiece() + getWords()" />
     <MESSAGE value="Jalal added Hand.java and Piece.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Jalal added Hand.java and Piece.java" />
+    <MESSAGE value="changed addpiece to addletter" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed addpiece to addletter" />
   </component>
 </project>

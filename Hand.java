@@ -2,9 +2,11 @@ import java.util.*;
 
 public class Hand{
 
+    String piece;
     ArrayList<Piece> hand;
 
     public Hand(){
+        super();
 
         hand = new ArrayList<Piece>(7);
 
@@ -18,9 +20,13 @@ public class Hand{
         hand.remove(piece);
     }
 
+    public String printPiece(){
+
+        return piece;
+    }
     public void printHand(){
         for (Piece p : hand){
-            System.out.println(p);
+            System.out.println(p.printPiece());
         }
     }
 
@@ -38,6 +44,8 @@ public class Hand{
         h.addPiece(p2);
         h.addPiece(p3);
         h.addPiece(p);
+        h.addPiece(p2);
+
 
         h.printHand();
 

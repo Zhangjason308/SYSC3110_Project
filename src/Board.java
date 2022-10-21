@@ -66,6 +66,10 @@ public class Board {
 
         return 1;
     }
+
+     public void newMethod() {
+
+     }
     public static void main(String args[]) {
         Board board1 = new Board();
         board1.placePiece(1,1,"T");

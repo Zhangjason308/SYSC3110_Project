@@ -12,19 +12,21 @@ public class Hand{
     }
 
     public void addPiece(Piece piece){
-        if(hand.size() < 7){
+        if(hand.size() <= 7){
             hand.add(piece);
         }
 
     }
 
-    public void addPieces(ArrayList<Piece> arr) {
+    public void randomPieces(ArrayList<Piece> arr) {
         for(Piece p : arr){
-            if(arr.size()<7){
+            if(arr.size()<=7){
                 hand.add(p);
             }
 
         }
+
+
 
     }
 
@@ -34,9 +36,10 @@ public class Hand{
 
     public void printHand(){
         for (Piece p : hand){
-            System.out.println(p.getLetter());
+            System.out.println(p.getPiece());
         }
     }
+
 
 
     public static void main(String args[]) {
@@ -59,7 +62,7 @@ public class Hand{
         h.addPiece(p);
         h.addPiece(p2);*/
 
-        h.addPieces(pi);
+        h.randomPieces(pi);
 
         h.printHand();
 

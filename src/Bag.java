@@ -5,11 +5,11 @@ import java.util.Random;
 public class Bag {
     ArrayList<Piece> letterBag;
 
-    public Bag(char[] letters, int[] numOfEachLetter){
+    public Bag(String[] letters, int[] numOfEachLetter){
         letterBag = new ArrayList<Piece>();
         ArrayList<Piece> uniquePieces = new ArrayList<Piece>();
         int i = 0;
-        for(char c : letters){  // makes each letter in the alphabet into a piece and add it to an arrayList
+        for(String c : letters){  // makes each letter in the alphabet into a piece and add it to an arrayList
             uniquePieces.add(new Piece(c));
             i++;
         }
@@ -58,11 +58,11 @@ public class Bag {
                 lastPiece = p;
                 continue;
             }
-            if(lastPiece.letter == p.letter){
+            if(lastPiece.getPiece() == p.getLetter()){
                 numOf++;
             }
             else{
-                bagString += lastPiece.letter + ": " + numOf + "\n";
+                bagString += lastPiece.getLetter() + ": " + numOf + "\n";
                 numOf = 1;
             }
             lastPiece = p;

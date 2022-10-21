@@ -36,7 +36,7 @@ public class Hand{
 
     public void printHand(){
         for (Piece p : hand){
-            System.out.println(p.getPiece());
+            System.out.println(p.getLetter());
         }
     }
 

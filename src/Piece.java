@@ -76,7 +76,7 @@ public class Piece {
         else return 0;
 }
 
-    public String getPiece(){
+    public String getLetter(){
 
         return piece;
     }
@@ -85,7 +85,7 @@ public class Piece {
     public static void main(String args[]) {
         Piece p = new Piece("Q");
         Piece p1 = new Piece("A");
-        System.out.println(p.getPiece());
+        System.out.println(p.getLetter());
         System.out.println("SCORE for p: "+ p.piecePoint());
         System.out.println("SCORE for p1: "+p1.piecePoint());
 

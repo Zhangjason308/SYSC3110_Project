@@ -58,7 +58,7 @@ public class Bag {
                 lastPiece = p;
                 continue;
             }
-            if(lastPiece.getPiece() == p.getLetter()){
+            if(lastPiece.getLetter() == p.getLetter()){
                 numOf++;
             }
             else{

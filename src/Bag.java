@@ -36,8 +36,10 @@ public class Bag {
         return toReturn;
     }
     public ArrayList<Piece> grabPiece(int number){  //returns a random piece and removes that piece from this bag
+
         Random random = new Random();
-        ArrayList<Piece> pieces = new ArrayList<Piece>();  // need to limit number upto 7
+        ArrayList<Piece> pieces = new ArrayList<Piece>();
+
         for (int i =0; i < number; i++){
             int randIndex = random.nextInt(remainingLetters());
             Piece toReturn = letterBag.get(randIndex);

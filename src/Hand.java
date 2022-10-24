@@ -6,31 +6,28 @@ public class Hand{
     ArrayList<Piece> hand;
 
     public Hand(){
-
         hand = new ArrayList<Piece>(7);
-
     }
 
     public int piecesRemaining(){
-        return hand.size();
+        return this.hand.size();
     }
     public void addPiece(Piece piece){
         if(hand.size() <= 7){
-            hand.add(piece);
+            this.hand.add(piece);
         }
 
     }
+    public ArrayList<Piece> getHandPieces(){
+        return this.hand;
+    }
 
-    public void randomPieces(ArrayList<Piece> arr) {
-        for(Piece p : arr){
-            if(arr.size()<=7){
-                hand.add(p);
+    public void addPieces(ArrayList<Piece> arr) {
+        if(piecesRemaining()<=7){  // check before pushing that this is an ok change
+            for(Piece p : arr){
+                this.hand.add(p);
             }
-
         }
-
-
-
     }
 
     public void removePiece(Piece piece){
@@ -65,7 +62,7 @@ public class Hand{
         h.addPiece(p);
         h.addPiece(p2);*/
 
-        h.randomPieces(pi);
+        h.addPieces(pi);
 
         h.printHand();
 

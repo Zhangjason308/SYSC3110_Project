@@ -11,6 +11,9 @@ public class Hand{
 
     }
 
+    public int piecesRemaining(){
+        return hand.size();
+    }
     public void addPiece(Piece piece){
         if(hand.size() <= 7){
             hand.add(piece);
